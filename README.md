@@ -1,2 +1,2 @@
 # HTML_WPF
-A simple(bushi) launcher with GUI 
+A simple(bushi) Minecraft launcher with GUI (used KMCCC lib)
