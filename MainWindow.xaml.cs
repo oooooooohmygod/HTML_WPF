@@ -37,13 +37,14 @@ namespace WpfApp1
             var ver = (KMCCC.Launcher.Version)versionsList.SelectedItem;
             var result = Core.Launch(new LaunchOptions
             {
+                //启动配置在这里修改
                 Version = ver, //Ver为Versions里你要启动的版本名字
                 MaxMemory = 4096, //最大内存，int类型
                 Authenticator = new OfflineAuthenticator("HTMLuser"), 
                                                                           //Authenticator = new YggdrasilLogin("邮箱", "密码", true), // 正版启动，最后一个为是否twitch登录
                 Mode = LaunchMode.MCLauncher, 
                                               // Server = new ServerInfo { Address = "服务器IP地址", Port = "服务器端口" }, //设置启动游戏后，自动加入指定IP的服务器，可以不要
-                Size = new WindowSize { Height = 768, Width = 1280 } //设置窗口大小，可以不要
+                Size = new WindowSize { Height = 768, Width = 1280 }  //设置窗口大小，可以不要
 
             });
         }
