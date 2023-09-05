@@ -7,8 +7,15 @@
         mc:Ignorable="d"
         Title="HTMLLauncher" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="39*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <ComboBox x:Name="versionsList" HorizontalAlignment="Left" Margin="315,148,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Id"/>
         <Button x:Name="Run" Content="启动" HorizontalAlignment="Left" Margin="461,148,0,0" VerticalAlignment="Top" Click="Run_Click"/>
+        <Calendar HorizontalAlignment="Left" Height="160" Margin="569,127,0,0" VerticalAlignment="Top" Width="199"/>
+        <Label Content="Date of today" HorizontalAlignment="Left" Height="35" Margin="618,87,0,0" VerticalAlignment="Top" Width="125"/>
+        <Label Content="JVAV FQ 加载失败" HorizontalAlignment="Left" Height="58" Margin="152,64,0,0" VerticalAlignment="Top" Width="418" FontSize="36"/>
 
     </Grid>
 </Window>
