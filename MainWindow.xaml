@@ -6,16 +6,21 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="HTMLLauncher" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FF5BA0CE">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="39*"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="767*"/>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="16*"/>
+            <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
         <ComboBox x:Name="versionsList" HorizontalAlignment="Left" Margin="315,148,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Id"/>
         <Button x:Name="Run" Content="启动" HorizontalAlignment="Left" Margin="461,148,0,0" VerticalAlignment="Top" Click="Run_Click"/>
-        <Calendar HorizontalAlignment="Left" Height="160" Margin="569,127,0,0" VerticalAlignment="Top" Width="199"/>
+        <Calendar HorizontalAlignment="Left" Height="160" Margin="569,127,0,0" VerticalAlignment="Top" Width="199" Grid.ColumnSpan="2"/>
         <Label Content="Date of today" HorizontalAlignment="Left" Height="35" Margin="618,87,0,0" VerticalAlignment="Top" Width="125"/>
-        <Label Content="JVAV FQ 加载失败" HorizontalAlignment="Left" Height="58" Margin="152,64,0,0" VerticalAlignment="Top" Width="418" FontSize="36"/>
+        <Label x:Name="JavaFX" Content=" JVAV FQ 加载失败" HorizontalAlignment="Left" Height="58" Margin="152,64,0,0" VerticalAlignment="Top" Width="418" FontSize="36"/>
+        <Button Content="Repair Jvav FQ" HorizontalAlignment="Left" Height="31" Margin="668,24,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click"/>
+        <TextBox x:Name="nameOffline" TextWrapping="Wrap" Text="游戏名(离线)" Margin="174,148,485,243"/>
+
 
     </Grid>
 </Window>
